@@ -1,0 +1,14 @@
+<p>count: <%= session[:count] %></p>
+<form action="/form" method="post">
+  <p>Add an item:</p>
+  <table>
+    <tr><td id="text">Name:</td><td><input type="text" name="name"></td></tr>
+    <tr><td id="text">Desc:</td><td><input type="text" name="desc"></td></tr>
+    <tr><td></td><td><input id="submitButton" type="submit" value="submit"></td></tr>
+  </table>
+</form>
+<script>
+document.getElementById('text').onclick = function() {
+  console.log("click");
+};
+</script>
